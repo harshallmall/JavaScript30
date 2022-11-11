@@ -52,7 +52,7 @@ function logText(e) {
 
 divs.forEach(div => div.addEventListener("click", logText, {
   capture: false, // true = in conjunction with Propagation
-  once: true 
+  once: true // only allows one click; useful in payment page where user doesn't want to pay more
 }));
 
 </script>
